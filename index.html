@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Lucas Carbonell Schubert</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -13,7 +14,7 @@
     <div class="contact">
       <span>📍 São Paulo – SP</span>
       <span>📞 (11) 96381-1524</span>
-      <span>✉️ lucas_carbonell@hotmail.com</span>
+      <span>✉️ <a href="mailto:lucas_carbonell@hotmail.com">lucas_carbonell@hotmail.com</a></span>
       <span>💻 <a href="https://github.com/LucasSchubert-Dev" target="_blank">GitHub</a></span>
     </div>
   </header>
@@ -27,66 +28,86 @@
     <a href="#habilidades">Habilidades</a>
   </nav>
 
-  <section id="perfil">
-    <h2>Perfil Pessoal</h2>
-    <p>Sou estudante de Ciência da Computação na Universidade São Judas Tadeu, com foco em
-    desenvolvimento backend. Tenho experiência em Java, Spring Boot, APIs e bancos de dados,
-    adquirida em projetos acadêmicos e no Bootcamp Santander Java Backend (2025). Possuo forte
-    capacidade analítica, gosto de resolver problemas complexos e aprender novas tecnologias.</p>
-  </section>
+  <main>
+    <section id="perfil">
+      <h2>Perfil Pessoal</h2>
+      <p>Sou estudante de Ciência da Computação na Universidade São Judas Tadeu, com foco em desenvolvimento backend. Tenho experiência em Java, Spring Boot, APIs e bancos de dados, adquirida em projetos acadêmicos e no Bootcamp Santander Java Backend (2025). Possuo forte capacidade analítica, gosto de resolver problemas complexos e aprender novas tecnologias.</p>
+    </section>
 
-  <section id="formacao">
-    <h2>Formação Acadêmica</h2>
-    <ul>
-      <li><strong>Ciência da Computação</strong> – Universidade São Judas Tadeu (2023 – 2027)</li>
-      <li><strong>Administração de Empresas</strong> – Etec Martin Luther King (2022 – 2023)</li>
-    </ul>
-  </section>
+    <section id="formacao" class="card-section">
+      <h2>Formação Acadêmica</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Ciência da Computação</h3>
+          <p>Universidade São Judas Tadeu (2023 – 2027)</p>
+        </div>
+        <div class="card">
+          <h3>Administração de Empresas</h3>
+          <p>Etec Martin Luther King (2022 – 2023)</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="cursos">
-    <h2>Cursos e Certificações</h2>
-    <ul>
-      <li>Bootcamp Santander Java Backend (2025) – Digital Innovation One</li>
-      <li>Git e GitHub para Projetos de Software</li>
-      <li>Fundamentos de Banco de Dados</li>
-      <li>Lógica de Programação e Estruturas de Dados</li>
-    </ul>
-  </section>
+    <section id="cursos" class="card-section">
+      <h2>Cursos e Certificações</h2>
+      <div class="cards">
+        <div class="card">Bootcamp Santander Java Backend (2025) – Digital Innovation One</div>
+        <div class="card">Git e GitHub para Projetos de Software</div>
+        <div class="card">Fundamentos de Banco de Dados</div>
+        <div class="card">Lógica de Programação e Estruturas de Dados</div>
+      </div>
+    </section>
 
-  <section id="experiencia">
-    <h2>Experiência Profissional</h2>
-    <ul>
-      <li><strong>PagBank – SDR (Efetivo)</strong> | São Paulo – SP | 2025 – Atual<br>
-      Atuação em pré-vendas, qualificação de leads, contato inicial com clientes e registro em CRM.</li>
+    <section id="experiencia" class="card-section">
+      <h2>Experiência Profissional</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>PagBank – SDR (Efetivo)</h3>
+          <p>São Paulo – SP | 2025 – Atual</p>
+          <p>Qualificação de leads, contato inicial com clientes e registro em CRM.</p>
+        </div>
+        <div class="card">
+          <h3>Mercado Livre – Representante de CX</h3>
+          <p>São Paulo – SP | 2023 – 2025</p>
+          <p>Monitoramento de métricas de Customer Experience e otimização de processos.</p>
+        </div>
+        <div class="card">
+          <h3>Mercado Livre – Jovem Aprendiz</h3>
+          <p>São Paulo – SP | 2022 – 2023</p>
+          <p>Qualificação de leads, agendamento de reuniões e apoio à equipe de vendas.</p>
+        </div>
+      </div>
+    </section>
 
-      <li><strong>Mercado Livre – Representante de CX</strong> | São Paulo – SP | 2023 – 2025<br>
-      Monitoramento de métricas de Customer Experience, análise de dados e otimização de processos.</li>
+    <section id="projetos" class="card-section">
+      <h2>Projetos no GitHub</h2>
+      <div class="cards">
+        <div class="card">
+          <a href="https://github.com/LucasSchubert-Dev/santander-demo" target="_blank">Santander Demo API</a>
+          <p>API REST em Java Spring Boot, arquitetura MVC e banco relacional.</p>
+        </div>
+        <div class="card">
+          <a href="https://github.com/LucasSchubert-Dev/sudoku" target="_blank">Sudoku Solver</a>
+          <p>Algoritmo de resolução em Java.</p>
+        </div>
+        <div class="card">
+          <a href="https://github.com/LucasSchubert-Dev/desafio-java" target="_blank">POO em Java</a>
+          <p>Exercícios práticos de Programação Orientada a Objetos.</p>
+        </div>
+      </div>
+    </section>
 
-      <li><strong>Mercado Livre – Jovem Aprendiz (SDR – Pré-vendas)</strong> | São Paulo – SP | 2022 – 2023<br>
-      Qualificação de leads, agendamento de reuniões e apoio direto à equipe de vendas.</li>
-    </ul>
-  </section>
-
-  <section id="projetos" class="projects">
-    <h2>Projetos no GitHub</h2>
-    <ul>
-      <li><a href="https://github.com/LucasSchubert-Dev/santander-demo" target="_blank">Santander Demo API</a> – Backend em Java Spring Boot, arquitetura MVC e banco relacional.</li>
-      <li><a href="https://github.com/LucasSchubert-Dev/sudoku" target="_blank">Sudoku Solver</a> – Algoritmo de resolução em Java.</li>
-      <li><a href="https://github.com/LucasSchubert-Dev/desafio-java" target="_blank">POO em Java</a> – Exercícios práticos de orientação a objetos.</li>
-    </ul>
-    <p>Mais em: <a href="https://github.com/LucasSchubert-Dev" target="_blank">meu GitHub</a></p>
-  </section>
-
-  <section id="habilidades">
-    <h2>Habilidades Técnicas</h2>
-    <ul>
-      <li><strong>Linguagens:</strong> Java, SQL, HTML, CSS</li>
-      <li><strong>Frameworks:</strong> Spring Boot, JPA/Hibernate</li>
-      <li><strong>Ferramentas:</strong> Git, GitHub, Postman</li>
-      <li><strong>Bancos de Dados:</strong> MySQL, PostgreSQL</li>
-      <li><strong>Outras competências:</strong> Resolução de problemas, pensamento analítico, comunicação clara, trabalho em equipe</li>
-    </ul>
-  </section>
+    <section id="habilidades" class="card-section">
+      <h2>Habilidades Técnicas</h2>
+      <div class="cards">
+        <div class="card">Java, SQL, HTML, CSS</div>
+        <div class="card">Spring Boot, JPA/Hibernate</div>
+        <div class="card">Git, GitHub, Postman</div>
+        <div class="card">MySQL, PostgreSQL</div>
+        <div class="card">Resolução de problemas, pensamento analítico, comunicação clara, trabalho em equipe</div>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>Feito com ❤️ por Lucas Carbonell Schubert</p>
