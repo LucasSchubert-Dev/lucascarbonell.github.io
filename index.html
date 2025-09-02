@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <h1>Lucas Carbonell Schubert</h1>
+    <h1><span id="typed-text"></span><span class="cursor">&nbsp;</span></h1>
     <p>Estudante de Ciência da Computação | Backend Developer em formação</p>
     <div class="contact">
       <span>📍 São Paulo – SP</span>
@@ -205,3 +205,18 @@
 
   cards.forEach(card => observer.observe(card));
 </script>
+
+// Typing effect
+const typedText = document.getElementById('typed-text');
+const textToType = "Lucas Carbonell Schubert — Backend Developer";
+let index = 0;
+
+function type() {
+  if(index < textToType.length){
+    typedText.textContent += textToType.charAt(index);
+    index++;
+    setTimeout(type, 100);
+  }
+}
+
+type();

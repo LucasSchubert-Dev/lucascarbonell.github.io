@@ -199,3 +199,16 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+
+/* Cursor piscando para efeito typing */
+.cursor {
+  display: inline-block;
+  background-color: #00acee;
+  width: 2px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
