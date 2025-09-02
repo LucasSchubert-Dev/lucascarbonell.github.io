@@ -212,3 +212,25 @@ html {
   0%, 50%, 100% { opacity: 1; }
   25%, 75% { opacity: 0; }
 }
+
+/* Botão Voltar ao Topo */
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #00acee;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none; /* inicialmente escondido */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#back-to-top:hover {
+  background-color: #007bb5;
+  transform: scale(1.1);
+}
