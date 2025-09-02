@@ -234,3 +234,33 @@ html {
   background-color: #007bb5;
   transform: scale(1.1);
 }
+
+/* Sidebar de redes sociais fixas */
+#social-sidebar {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background: rgba(31, 42, 56, 0.85);
+  border-radius: 0 8px 8px 0;
+  padding: 10px;
+  z-index: 1000;
+}
+
+#social-sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, background 0.2s;
+}
+
+#social-sidebar a:hover {
+  transform: scale(1.2);
+  background: #00acee;
+  border-radius: 50%;
+}
