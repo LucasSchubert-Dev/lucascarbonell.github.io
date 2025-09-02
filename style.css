@@ -3,17 +3,27 @@ body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f7fa;
   color: #333;
   line-height: 1.6;
+  background: linear-gradient(-45deg, #1f2a38, #2c3e50, #34495e, #1f2a38);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+/* Animação do gradiente */
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
 
 header {
-  background: #1f2a38;
+  background: rgba(31, 42, 56, 0.85);
   color: white;
   text-align: center;
   padding: 50px 20px;
   position: relative;
+  backdrop-filter: blur(5px);
 }
 
 header h1 {
@@ -43,7 +53,7 @@ header a:hover {
 
 /* Menu e navegação */
 nav {
-  background: #2c3e50;
+  background: rgba(44, 62, 80, 0.9);
   text-align: center;
   padding: 12px 0;
   position: sticky;
@@ -61,10 +71,12 @@ nav a {
   margin: 0 10px;
   text-decoration: none;
   font-weight: 600;
+  transition: color 0.3s, transform 0.2s;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #00acee;
+  transform: scale(1.05);
 }
 
 /* Menu mobile */
@@ -86,6 +98,10 @@ main {
 
 section {
   margin-bottom: 40px;
+  background: rgba(255,255,255,0.85);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
 }
 
 section h2 {
@@ -103,25 +119,25 @@ section h2 {
 }
 
 .card {
-  background: white;
+  background: rgba(255,255,255,0.9);
   padding: 20px;
   flex: 1 1 280px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
-.card h3 {
-  margin-top: 0;
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.card a {
-  color: #007bff;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.card a:hover {
-  text-decoration: underline;
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.25);
 }
 
 .card img {
@@ -132,10 +148,11 @@ section h2 {
 /* Footer */
 footer {
   text-align: center;
-  background: #1f2a38;
+  background: rgba(31, 42, 56, 0.85);
   color: white;
   padding: 25px 10px;
   margin-top: 40px;
+  backdrop-filter: blur(5px);
 }
 
 /* Responsividade */
@@ -151,7 +168,7 @@ footer {
   }
 
   nav.active {
-    max-height: 500px; /* permite expandir o menu */
+    max-height: 500px;
   }
 
   .menu-toggle {
@@ -178,48 +195,7 @@ footer {
   }
 }
 
-/* Soft Skills com cores e hover */
-#softskills .card {
-  background: #e0f7fa;
-  text-align: center;
-  font-size: 1.1rem;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-#softskills .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-}
-
-/* Animação para todos os cards */
-.card {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.card.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* Scroll suave */
 html {
   scroll-behavior: smooth;
-}
-
-/* Links do menu com transição */
-nav a {
-  transition: color 0.3s, transform 0.2s;
-}
-
-nav a:hover {
-  color: #00acee;
-  transform: scale(1.05);
-}
-
-/* Cards com destaque ao passar o mouse */
-.card:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.2);
 }
