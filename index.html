@@ -6,44 +6,161 @@
   <title>Portfólio - Lucas Carbonell Schubert</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center;
-      background: #f5f5f5;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
     }
     header {
-      background: #333;
+      background: #2c3e50;
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+    nav {
+      background: #34495e;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
-      padding: 40px;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    a {
+    section h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: white;
+      margin-top: 40px;
+    }
+    .contact {
+      margin: 15px 0;
+      font-size: 0.95rem;
+    }
+    .contact span {
+      display: block;
+    }
+    .projects a {
       color: #007bff;
-      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Olá, eu sou o Lucas 👋</h1>
-    <p>Estudante Universitário | SDR (Pré-vendas) no PagBank</p>
+    <h1>Lucas Carbonell Schubert</h1>
+    <p>Estudante de Ciência da Computação | Backend Developer em formação</p>
+    <div class="contact">
+      <span>📍 São Paulo – SP</span>
+      <span>📞 (11) 96381-1524</span>
+      <span>✉️ lucas_carbonell@hotmail.com</span>
+      <span>💻 <a href="https://github.com/LucasSchubert-Dev" target="_blank">GitHub</a></span>
+    </div>
   </header>
 
-  <section>
-    <h2>Sobre mim</h2>
-    <p>Sou apaixonado por tecnologia, já atuei como Jovem Aprendiz e Representante de CX no Mercado Livre, 
-       e atualmente sou SDR efetivado no PagBank enquanto estudo programação em Java.</p>
+  <nav>
+    <a href="#perfil">Perfil</a>
+    <a href="#formacao">Formação</a>
+    <a href="#cursos">Cursos</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#habilidades">Habilidades</a>
+  </nav>
+
+  <section id="perfil">
+    <h2>Perfil Pessoal</h2>
+    <p>Sou estudante de Ciência da Computação na Universidade São Judas Tadeu, com foco em
+    desenvolvimento backend. Tenho experiência em Java, Spring Boot, APIs e bancos de dados,
+    adquirida em projetos acadêmicos e no Bootcamp Santander Java Backend (2025). Possuo forte
+    capacidade analítica, gosto de resolver problemas complexos e aprender novas tecnologias.</p>
   </section>
 
-  <section>
-    <h2>Projetos</h2>
+  <section id="formacao">
+    <h2>Formação Acadêmica</h2>
     <ul>
-      <li><a href="https://github.com/LucasSchubert-Dev/santander-demo">Santander Demo</a></li>
-      <li><a href="https://github.com/LucasSchubert-Dev/desafio-java">Desafio Java</a></li>
-      <li><a href="https://github.com/LucasSchubert-Dev/sudoku">Sudoku Challenge</a></li>
+      <li><strong>Ciência da Computação</strong> – Universidade São Judas Tadeu (2023 – 2027)</li>
+      <li><strong>Administração de Empresas</strong> – Etec Martin Luther King (2022 – 2023)</li>
+    </ul>
+  </section>
+
+  <section id="cursos">
+    <h2>Cursos e Certificações</h2>
+    <ul>
+      <li>Bootcamp Santander Java Backend (2025) – Digital Innovation One</li>
+      <li>Git e GitHub para Projetos de Software</li>
+      <li>Fundamentos de Banco de Dados</li>
+      <li>Lógica de Programação e Estruturas de Dados</li>
+    </ul>
+  </section>
+
+  <section id="experiencia">
+    <h2>Experiência Profissional</h2>
+    <ul>
+      <li><strong>PagBank – SDR (Efetivo)</strong> | São Paulo – SP | 2025 – Atual<br>
+      Atuação em pré-vendas, qualificação de leads, contato inicial com clientes e registro em CRM.</li>
+
+      <li><strong>Mercado Livre – Representante de CX</strong> | São Paulo – SP | 2023 – 2025<br>
+      Monitoramento de métricas de Customer Experience, análise de dados e otimização de processos.</li>
+
+      <li><strong>Mercado Livre – Jovem Aprendiz (SDR – Pré-vendas)</strong> | São Paulo – SP | 2022 – 2023<br>
+      Qualificação de leads, agendamento de reuniões e apoio direto à equipe de vendas.</li>
+    </ul>
+  </section>
+
+  <section id="projetos" class="projects">
+    <h2>Projetos no GitHub</h2>
+    <ul>
+      <li><a href="https://github.com/LucasSchubert-Dev/santander-demo" target="_blank">Santander Demo API</a> – Backend em Java Spring Boot, arquitetura MVC e banco relacional.</li>
+      <li><a href="https://github.com/LucasSchubert-Dev/sudoku" target="_blank">Sudoku Solver</a> – Algoritmo de resolução em Java.</li>
+      <li><a href="https://github.com/LucasSchubert-Dev/desafio-java" target="_blank">POO em Java</a> – Exercícios práticos de orientação a objetos.</li>
+    </ul>
+    <p>Mais em: <a href="https://github.com/LucasSchubert-Dev" target="_blank">meu GitHub</a></p>
+  </section>
+
+  <section id="habilidades">
+    <h2>Habilidades Técnicas</h2>
+    <ul>
+      <li><strong>Linguagens:</strong> Java, SQL, HTML, CSS</li>
+      <li><strong>Frameworks:</strong> Spring Boot, JPA/Hibernate</li>
+      <li><strong>Ferramentas:</strong> Git, GitHub, Postman</li>
+      <li><strong>Bancos de Dados:</strong> MySQL, PostgreSQL</li>
+      <li><strong>Outras competências:</strong> Resolução de problemas, pensamento analítico, comunicação clara, trabalho em equipe</li>
     </ul>
   </section>
 
