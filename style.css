@@ -202,3 +202,24 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Links do menu com transição */
+nav a {
+  transition: color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  color: #00acee;
+  transform: scale(1.05);
+}
+
+/* Cards com destaque ao passar o mouse */
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.2);
+}
