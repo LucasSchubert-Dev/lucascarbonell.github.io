@@ -177,3 +177,16 @@ footer {
     padding: 15px;
   }
 }
+
+/* Soft Skills com cores e hover */
+#softskills .card {
+  background: #e0f7fa;
+  text-align: center;
+  font-size: 1.1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#softskills .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
