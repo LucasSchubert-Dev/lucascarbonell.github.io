@@ -1,3 +1,4 @@
+/* Fonte principal */
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -12,6 +13,7 @@ header {
   color: white;
   text-align: center;
   padding: 50px 20px;
+  position: relative;
 }
 
 header h1 {
@@ -39,6 +41,7 @@ header a:hover {
   text-decoration: underline;
 }
 
+/* Menu e navegação */
 nav {
   background: #2c3e50;
   text-align: center;
@@ -46,11 +49,16 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  transition: max-height 0.3s ease;
 }
 
 nav a {
   color: white;
-  margin: 0 18px;
+  margin: 0 10px;
   text-decoration: none;
   font-weight: 600;
 }
@@ -59,6 +67,17 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Menu mobile */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* Main e seções */
 main {
   max-width: 1000px;
   margin: 40px auto;
@@ -76,6 +95,7 @@ section h2 {
   padding-bottom: 10px;
 }
 
+/* Cards flexíveis */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -109,10 +129,51 @@ section h2 {
   margin-right: 5px;
 }
 
+/* Footer */
 footer {
   text-align: center;
   background: #1f2a38;
   color: white;
   padding: 25px 10px;
   margin-top: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  nav.active {
+    max-height: 500px; /* permite expandir o menu */
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    margin: 8px 0;
+  }
+
+  .card {
+    padding: 15px;
+  }
 }

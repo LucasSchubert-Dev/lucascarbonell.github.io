@@ -17,16 +17,16 @@
       <span>✉️ <a href="mailto:lucas_carbonell@hotmail.com">lucas_carbonell@hotmail.com</a></span>
       <span>💻 <a href="https://github.com/LucasSchubert-Dev" target="_blank">GitHub</a></span>
     </div>
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    <nav id="navbar">
+      <a href="#perfil">Perfil</a>
+      <a href="#formacao">Formação</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#habilidades">Habilidades</a>
+    </nav>
   </header>
-
-  <nav>
-    <a href="#perfil">Perfil</a>
-    <a href="#formacao">Formação</a>
-    <a href="#cursos">Cursos</a>
-    <a href="#experiencia">Experiência</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#habilidades">Habilidades</a>
-  </nav>
 
   <main>
     <section id="perfil">
@@ -129,5 +129,14 @@
   <footer>
     <p>Feito com ❤️ por Lucas Carbonell Schubert</p>
   </footer>
+
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navbar = document.getElementById('navbar');
+
+    menuToggle.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
