@@ -119,13 +119,14 @@ section h2 {
 }
 
 .card {
-  background: rgba(255,255,255,0.9);
+  background: #f7f9fc;
+  color: #1f2a38;
   padding: 20px;
   flex: 1 1 280px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, opacity 0.6s ease;
   opacity: 0;
   transform: translateY(20px);
 }
@@ -244,15 +245,15 @@ html {
   flex-direction: column;
   background: rgba(31, 42, 56, 0.85);
   border-radius: 0 8px 8px 0;
-  padding: 10px;
-  z-index: 1000;
+  padding: 12px;
+  z-index: 2000;
 }
 
 #social-sidebar a {
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
-  margin: 10px 0;
+  font-size: 1.6rem;
+  margin: 12px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -264,20 +265,4 @@ html {
   background: #00acee;
   border-radius: 50%;
 }
-.card-section {
-  background-color: #e0e4e8;
-  color: #1f2a38; /* texto escuro */
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px auto;
-  max-width: 900px;
-}
 
-.card {
-  background-color: #f7f9fc;
-  color: #1f2a38; /* texto escuro */
-  padding: 15px;
-  border-radius: 8px;
-  margin: 10px 0;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
