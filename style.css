@@ -264,3 +264,20 @@ html {
   background: #00acee;
   border-radius: 50%;
 }
+.card-section {
+  background-color: #e0e4e8;
+  color: #1f2a38; /* texto escuro */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.card {
+  background-color: #f7f9fc;
+  color: #1f2a38; /* texto escuro */
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}

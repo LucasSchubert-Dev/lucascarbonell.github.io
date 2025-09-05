@@ -9,6 +9,11 @@
 </head>
 <body>
   <header>
+<div id="social-sidebar">
+  <a href="https://www.linkedin.com/in/seu-linkedin" target="_blank" title="LinkedIn">💼</a>
+  <a href="https://github.com/LucasSchubert-Dev" target="_blank" title="GitHub">🐱</a>
+  <a href="mailto:lucas_carbonell@hotmail.com" title="E-mail">✉️</a>
+</div>
     <h1><span id="typed-text"></span><span class="cursor">&nbsp;</span></h1>
     <p>Estudante de Ciência da Computação | Backend Developer em formação</p>
     <div class="contact">
@@ -138,6 +143,7 @@
       navbar.classList.toggle('active');
     });
   </script>
+<button id="back-to-top" title="Voltar ao Topo">⬆️</button>
 </body>
 </html>
 
@@ -220,18 +226,3 @@ function type() {
 }
 
 type();
-
-// Botão Voltar ao Topo
-const backToTop = document.getElementById('back-to-top');
-
-window.addEventListener('scroll', () => {
-  if(window.scrollY > 300){
-    backToTop.style.display = "block";
-  } else {
-    backToTop.style.display = "none";
-  }
-});
-
-backToTop.addEventListener('click', () => {
-  window.scrollTo({top: 0, behavior: 'smooth'});
-});
